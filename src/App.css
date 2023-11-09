@@ -35,3 +35,9 @@ body::before {
   font-weight: 900;
   color: white;
 }
+@media (max-width: 600px) {
+  /* Adjust styles for screens with a maximum width of 600 pixels (typical phone width) */
+  .content {
+    left: 5%;
+    text-align: center; /* Center the text on smaller screens */
+
