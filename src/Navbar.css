@@ -26,4 +26,10 @@
     color: red;
     transform: scale(1.1);
   }
+  @media (max-width: 600px) {
+    /* Adjust styles for screens with a maximum width of 600 pixels (typical phone width) */
+    .nav-link {
+      font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+  }
   
