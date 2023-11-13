@@ -1,14 +1,12 @@
-/* App.css */
-
 body {
   margin: 0;
   padding: 0;
   position: relative;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 body::before {
@@ -19,27 +17,212 @@ body::before {
   width: 100%;
   height: 100%;
   background: url('./a.png') center/cover;
-  filter: brightness(0.5); /* Adjust the brightness to control darkness */
+  filter: brightness(0.5);
   z-index: -1;
 }
 
+.os:hover{
+  color: red;
+  transition: transform 0.2s ease-in-out;
+
+  transform: scale(1.1);
+}
+
 .content {
+  margin-top: 300px;
+  margin-left: 150px;
+
   position: relative;
-  right: 100%;
   text-align: left;
+  z-index: 1;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+
+.hello-text {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 1000;
+  margin-top: 400px;
+  color: rgb(11, 116, 122);
+}
+.OurTeam:hover{
+  color: red;
+  transition: transform 0.2s ease-in-out;
+
+  transform: scale(1.1);
+
+}
+
+.km1 {
+position:absolute;
+font-size: 2.5em;
+font-weight: 1000;
+top: 1900px;
+left: 190px;
+  color: rgb(11, 116, 122);
+  z-index: 2;
+}
+.km1:hover {
+  color: red;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+  .km2:hover {
+    color: red;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.1);
+    }
+    .km3:hover {
+      color: red;
+      transition: transform 0.2s ease-in-out;
+      transform: scale(1.1);
+      }
+.km2 {
+  position:absolute;
+  font-size: 2.5em;
+  font-weight: 1000;
+  top: 1900px;
+  left: 910px;
+    color: rgb(11, 116, 122);
+    z-index: 2;
+
+  }
+  .km3 {
+    position:absolute;
+    font-size: 2.5em;
+    font-weight: 1000;
+    top: 1900px;
+    left: 1625px;
+      color: rgb(11, 116, 122); 
+      z-index: 2;
+    }
+    .km4 {
+     width: 350px; 
+     height: 400px;
+      position:absolute;
+      font-size: 2.5em;
+      font-weight: 1000;
+      top: 1440px;
+      left: 130px;
+        color: rgb(11, 116, 122);
+      }
+      .km5 {
+        width: 350px; 
+        height: 400px;
+         position:absolute;
+         font-size: 2.5em;
+         font-weight: 1000;
+         top: 1440px;
+         left: 830px;
+           color: rgb(11, 116, 122);
+         }
+         .km6 {
+          width: 350px; 
+          height: 400px;
+           position:absolute;
+           font-size: 2.5em;
+           font-weight: 1000;
+           top: 1440px;
+           left: 1550px;
+             color: rgb(11, 116, 122);
+           }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 110px; /* Adjust the gap between grid items as needed */
+  padding: 20px;
+  margin: 0;
+}
+.grid-container2 {
+  
+  position:absolute;
+  top: 1900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 340px; /* Adjust the gap between grid items as needed */
+  margin: 0;
   z-index: 1;
 }
 
-.content h1 {
-  font-size: 4em;
-  font-weight: 900;
-  color: white;
+
+
+.grid-item {
+  text-align: center;
+  width: 1px;
+}
+.grid-item2 {
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  margin-left: 175px;
+  font-size: 2em;
+  text-align: left;
+  align-self: self-start;
+  width: 200px;
+  border: none;
+}
+.teamphotoback{
+  width: 800px;
+  position: absolute;
+  top: 2200px;
+  z-index: 1;
+  height: 800px;
+  left: 50px;
+ }
+ .OurTeam2{
+  width: 600px;
+  position: absolute;
+  top: 2300px;
+  z-index: 1;
+  left: 150px;
+  z-index: 50;
+
+ }
+.OurTeam{
+  position: absolute;
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: 10000;
+top:2050px;
+left: 150px;
+  color: rgb(11, 116, 122);
+  z-index:2 ;
 }
 
+.teampara{
+  position: absolute;
+  top: 2250px;
+  left:900px;
+  width: 450;
+  font-size: 1.5em;
+  padding-right: 100px;
+}
+
+
+
+
 @media (max-width: 600px) {
-  /* Adjust styles for screens with a maximum width of 600 pixels (typical phone width) */
   .content {
-    right: 0; /* Reset the right position for smaller screens */
-    text-align: center; /* Center the text on smaller screens */
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: black;
+  }
+  
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 10px; 
+  }
+
+  .grid-item {
+    width: 100%; 
   }
 }
